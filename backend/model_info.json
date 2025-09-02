@@ -1,0 +1,12 @@
+{
+  "feature_count": 39,
+  "classes": [
+    "heart",
+    "oblong",
+    "oval",
+    "round",
+    "square"
+  ],
+  "model_type": "Random Forest",
+  "accuracy": 0.38
+}

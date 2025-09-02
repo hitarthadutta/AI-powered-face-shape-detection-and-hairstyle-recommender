@@ -1,0 +1,231 @@
+.results {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.results-header h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.face-shape-result {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.shape-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.shape-icon {
+  font-size: 4rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+}
+
+.shape-info {
+  text-align: left;
+}
+
+.shape-name {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.confidence {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.shape-description {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.recommendations-section {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations-section h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.recommendations-intro {
+  color: #666;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hairstyles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.hairstyle-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hairstyle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.hairstyle-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.hairstyle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hairstyle-card:hover .hairstyle-image img {
+  transform: scale(1.05);
+}
+
+.hairstyle-content {
+  padding: 20px;
+}
+
+.hairstyle-content h4 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.hairstyle-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.tutorial-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tutorial-link:hover {
+  background: #667eea;
+  color: white;
+}
+
+.tips-section {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.tips-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tips-content li {
+  padding: 8px 0;
+  color: #666;
+  position: relative;
+  padding-left: 24px;
+}
+
+.tips-content li:before {
+  content: "💡";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.action-buttons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .results-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .shape-display {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .shape-info {
+    text-align: center;
+  }
+  
+  .hairstyles-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .face-shape-result,
+  .recommendations-section,
+  .tips-section {
+    padding: 24px;
+  }
+}

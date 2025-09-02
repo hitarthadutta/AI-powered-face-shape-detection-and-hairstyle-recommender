@@ -1,0 +1,25 @@
+.App {
+  min-height: 100vh;
+}
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  flex-direction: column;
+}
+
+.loading p {
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
